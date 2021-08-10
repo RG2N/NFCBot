@@ -4,7 +4,7 @@
   "description": "The official bot code for NFC.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "echo \"Error: no test specified\" && exit 1npm "
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/RG2N/NFCBot/issues"
   },
-  "homepage": "https://github.com/RG2N/NFCBot#readme",
-  "dependencies": {
-    "nodemon": "^2.0.12"
-  }
+  "homepage": "https://github.com/RG2N/NFCBot#readme"
 }
