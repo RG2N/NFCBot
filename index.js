@@ -1,6 +1,6 @@
 require('dotenv').config(); //initialize dotenv
 const Discord = require('discord.js'); //import discord.js
-const status = require('minecraft-server-status');
+const util = require('minecraft-server-util');
 token = process.env.token
 
 const bot = new Discord.Client(); //create new bot
