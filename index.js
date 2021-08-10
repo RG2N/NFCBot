@@ -29,7 +29,6 @@ function command(msg) {
     if (msg.content === prefix + 'status') {
         util.status('anarchy.nfcservers.tk') // port is default 25565
             .then((response) => {
-                console.log(response);
                 const status_host = response.host;
                 const status_port = response.port;
                 const status_version = response.version;
