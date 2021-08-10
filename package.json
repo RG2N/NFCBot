@@ -4,7 +4,8 @@
   "description": "The official bot code for NFC.",
   "main": "index.js",
   "scripts": {
-    "devStart": "echo \"Error: no test specified\" && exit 1npm "
+    "devStart": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
