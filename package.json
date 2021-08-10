@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/RG2N/NFCBot/issues"
   },
-  "homepage": "https://github.com/RG2N/NFCBot#readme"
+  "homepage": "https://github.com/RG2N/NFCBot#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^13.0.1",
+    "dotenv": "^10.0.0"
+  }
 }
