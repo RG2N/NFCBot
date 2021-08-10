@@ -10,11 +10,6 @@ const prefix = "!";
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
   status();
-  interval = setInterval (function () {
-    var channeltoedit = bot.channels.fetch("872612689665470464");
-    var msgtoedit = msg.channeltoedit.fetch("872612689665470464-874711007530975272");
-        
-  }, 60); //every hour
 });
 
 async function status() {
@@ -150,7 +145,7 @@ function command(msg) {
     }
 
     if (msg.content === prefix + 'status') {
-        msg.channel.send('Invalid command usage! Servers:\n!status anarchy')
+        msg.channel.send('Invalid command usage! Servers:\n!status anarchy\n!status autobhop\n!status norecoil')
     }
 }
 
