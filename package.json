@@ -1,0 +1,22 @@
+{
+  "name": "nfcbot",
+  "version": "1.0.0",
+  "description": "The official bot code for NFC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RG2N/NFCBot.git"
+  },
+  "author": "RG2N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RG2N/NFCBot/issues"
+  },
+  "homepage": "https://github.com/RG2N/NFCBot#readme",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
