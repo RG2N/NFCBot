@@ -14,8 +14,11 @@ bot.on('ready', () => {
 
 async function status() {
     // Anarchy
-    util.status('anarchy.nfcservers.tk') // port is default 25565
-    .then((response) => {
+    Gamedig.query({
+        type: 'minecraft',
+        host: 'anarchy.nfcservers.tk',
+        port: 25565
+    }).then((state) => {
         bot.user.setPresence({
             status: 'online',
             activity: {
@@ -23,7 +26,9 @@ async function status() {
                 type: 'PLAYING'
             }
         })
-    })
+    }).catch((error) => {
+        
+    });
     await sleep(10000);
     // CSGO: Auto BHOP
     Gamedig.query({
@@ -38,7 +43,7 @@ async function status() {
             }
         })
     }).catch((error) => {
-        console.log("Server is offline");
+        
     });
     await sleep(10000)
     // CSGO: No Spread
@@ -55,7 +60,7 @@ async function status() {
             }
         })
     }).catch((error) => {
-        console.log("Server is offline");
+        
     });
     await sleep(10000)
     // Restart
@@ -85,7 +90,7 @@ function command(msg) {
                 "Max Players: " + status_maxPlayers
             )
         }).catch((error) => {
-            console.log("Server is offline");
+            
         });
         util.status('anarchy.nfcservers.tk') // port is default 25565
             .then((response) => {
@@ -122,7 +127,7 @@ function command(msg) {
                 "Ping: " + state.ping + "ms"
             )
         }).catch((error) => {
-            console.log("Server is offline");
+            
         });
     }
 
@@ -140,7 +145,7 @@ function command(msg) {
                 "Ping: " + state.ping + "ms"
             )
         }).catch((error) => {
-            console.log("Server is offline");
+            
         });
     }
 
